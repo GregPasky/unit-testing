@@ -1,0 +1,18 @@
+npm install --save mocha chai
+
+const assert = require("chai").assert;
+
+
+
+const myFunc = () => {
+  return "Hello";
+}
+
+
+describe("App",() => {
+  it("It should reutrn Hello",() => {
+      assert.equal(myFunc(),"Hello");
+  }
+}
+
+> npm run mocha;
